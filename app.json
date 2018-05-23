@@ -7,13 +7,13 @@
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#3498DB",
+    "navigationBarBackgroundColor": "#2E86C1",
     "navigationBarTitleText": "校园借书&UESTC",
     "navigationBarTextStyle":"white"
   },
   "tabBar": {
     "color": "#a9b7b7",
-    "selectedColor": "#11cd6e",
+    "selectedColor": "#2E86C1",
     "borderStyle": "white",
     "list": [
       {
