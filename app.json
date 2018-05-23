@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/table/table",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#3498DB",
+    "navigationBarTitleText": "校园借书&UESTC",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/icon_list_onclick.png",
+        "iconPath": "images/icon_list.png",
+        "pagePath": "pages/index/index",
+        "text": "可借列表"
+      },
+      {
+        "selectedIconPath": "images/icon_lend_onclick.png",
+        "iconPath": "images/icon_lend.png",
+        "pagePath": "pages/table/table",
+        "text": "外借填表"
+      },
+      {
+        "selectedIconPath": "images/icon_user_onclick.png",
+        "iconPath": "images/icon_user.png",
+        "pagePath": "pages/user/user",
+        "text": "我"
+      }
+    ]
+  }
+  
+}
