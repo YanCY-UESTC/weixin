@@ -6,10 +6,11 @@
         <input class="" disabled placeholder="     请输入书籍名" value="{{searchValue}}"/>
       </view>  
     </view>  
-    <view class='sousuo'>搜索</view>  
+    <view class='sousuo' bindtap='suo'>搜索</view>  
   </view> 
   <view class='bc_text'>
     <view class='border'>可外借书籍</view>
+    <view wx:for="{{}}"></view>
   </view>
 </view>
 
