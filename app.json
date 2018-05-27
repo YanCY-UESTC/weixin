@@ -7,11 +7,11 @@
     "pages/result/result",
     "pages/lend_list/lend_list"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#2E86C1",
     "navigationBarTitleText": "校园借书&UESTC",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#a9b7b7",

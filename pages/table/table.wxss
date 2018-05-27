@@ -1,0 +1,9 @@
+.title{
+  height:100rpx;
+}
+
+.itemView{
+  word-break:break-all;
+  display:block ;
+  white-space: pre-line;
+}
