@@ -1,1 +1,9 @@
 /* pages/lend_list/lend_list.wxss */
+view.title {
+  font-size: 50rpx;
+  text-align: left;
+  margin: 10rpx;
+  width: 100%;
+  display: flex;  
+  flex-direction: row;
+}  
