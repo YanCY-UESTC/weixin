@@ -3,9 +3,9 @@ Page({
     searchValue: '',
   },
   onReady: function (){
-    var search = wx.getStorageSync('search');
+    var Search = wx.getStorageSync('Search');
     this.setData({
-      searchValue: search,
+      searchValue: Search,
     });
   },  
 })

@@ -1,6 +1,6 @@
 Page({
-  data:{
-      searchValue: '',
+  data:{  
+    searchValue: '',
   },
   onLoad: function () {
   },
@@ -11,14 +11,14 @@ Page({
     });
   },  
   search: function(e){
-    var search = this.data.searchValue
+    var Search = this.data.searchValue
+    wx.setStorageSync('Search', Search),
     wx.navigateTo({
       url: '../result/result',
-      success: function(res) {
-        wx.setStorageSync('search', search)
-      },
+      success: function(res) {},
+      success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},
     });
-  },
+  }
 })
