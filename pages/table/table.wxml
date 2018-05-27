@@ -1,12 +1,12 @@
 <!--table.wxml-->
 <view class="title">外借填表</view>
-<view class="horizon_line">
+<view class="horizon_line"></view>
   <view class="itemView">书名：
     <input class="input" name="bookName" placeholder="请输入书名" bindinput="bookNameInput"/>
   </view>
   <view class="itemView">图书ISBN：
     <input class="input" name="bookIBSN" placeholder="请输入图书ISBN" bindinput="bookIBSNInput" />
-  </view>
+  
   <view class="itemView">备注：
     <input class="input" name="note" placeholder="请输入备注内容（如理想租金、借阅要求、交接地点等" bindinput="note" />
   </view>

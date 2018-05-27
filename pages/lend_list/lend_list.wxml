@@ -1,0 +1,3 @@
+<!--pages/lend_list/lend_list.wxml-->
+<view>外借列表</view>
+<view class="horizon_line"></view>
