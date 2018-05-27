@@ -1,0 +1,4 @@
+<view>
+   <view wx:if="{{searchValue.length==0}}">未找到相关信息</view> 
+  <view wx:else >{{searchValue}}</view>
+</view>

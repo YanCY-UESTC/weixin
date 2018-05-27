@@ -1,7 +1,6 @@
 Page({
   data:{
       searchValue: '',
-      img: '',
   },
   onLoad: function () {
   },
@@ -12,13 +11,14 @@ Page({
     });
   },  
   search: function(e){
+    var search = this.data.searchValue
     wx.navigateTo({
-      url: '../user/user',
-      success: function(res) {},
+      url: '../result/result',
+      success: function(res) {
+        wx.setStorageSync('search', search)
+      },
       fail: function(res) {},
       complete: function(res) {},
     });
   },
-  suo: function (e) {
-  }
 })

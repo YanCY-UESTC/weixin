@@ -1,5 +1,5 @@
 <view class='setback'>
-  <view class='page_row' bindtap="suo">  
+  <view class='page_row'>  
     <view class="search">  
       <view class='df search_arr'> 
         <icon class="searchcion" size='20' type='search'></icon>  
@@ -10,5 +10,6 @@
   </view> 
   <view class='bc_text'>
     <view class='border'>可外借书籍</view>
+    <view>{{searchValue}}</view>
   </view>
 </view>
