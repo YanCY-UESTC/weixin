@@ -3,7 +3,31 @@
 }
 
 .itemView{
+  top:15px;
+  display: block;
   word-break:break-all;
-  display:block ;
   white-space: pre-line;
 }
+
+.input{  
+  height: 40px;  
+  width: 90%; 
+  top:15px; 
+  border: solid 1px rgb(204, 204, 204); 
+  border-radius:15px; 
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  margin: 0 auto; 
+}  
+
+.note{  
+  height: 200px;  
+  width: 90%;  
+  top:15px;
+  border: solid 1px rgb(204, 204, 204);  
+  border-radius:15px;
+  display: flex;  
+  flex-direction: column; 
+  margin: 0 auto; 
+}  
