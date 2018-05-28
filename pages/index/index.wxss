@@ -50,3 +50,22 @@
 .setback{
   background-color: whitesmoke;
 }
+
+.list{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  position: absolute;
+  left: 10rpx;
+}
+
+.info_text{
+  text-align: center;
+  -webkit-text-fill-color: grey;
+  font-size: small;
+}
+
+.image{
+  width: 300rpx;
+  height: 400rpx;
+}

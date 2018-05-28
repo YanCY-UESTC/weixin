@@ -1,0 +1,21 @@
+.image_size{
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.button_size{
+  width: 150rpx;
+  height: 50rpx;
+}
+
+.size{
+  font-size: xx-small;
+  text-align: center; 
+}
+
+.horizon_Line{
+  background-color: white;
+  height: 8px;
+  width: 100%;
+}
+

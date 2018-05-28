@@ -12,4 +12,14 @@
     <view class='border'>可外借书籍</view>
   </view>
 </view>
-<view>{{searchValue}}</view>
+<view class='list'>
+  <button bindtap='book_info'>
+    <view>
+      <image class='image' src='{{book_image}}'></image>
+    </view>
+    <view class='info_text'>
+      <view>{{book_name}}</view>
+      <view>作者：{{book_auth}}</view>
+    </view>
+  </button>
+</view>

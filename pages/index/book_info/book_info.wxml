@@ -1,0 +1,16 @@
+<view>
+  <image class='image_size' src='{{book_image}}'></image>
+  <view>{{book_name}}</view>
+  <view>作者：{{book_auth}}</view>
+  <view>剩余：{{book_num}}</view>
+  <view>备注：{{book_note}}</view>
+  <view class='container'>
+    <button bindtap='save' style='background: yellow;' class='button_size'>
+      <view class='size'>收      藏</view>
+    </button>
+    <view class='horizon_Line'></view>
+    <button bindtap='rent' style='background: yellow;' class='button_size'>
+      <view class='size'>租      借</view>
+    </button>
+  </view>
+</view>

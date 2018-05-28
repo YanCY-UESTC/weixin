@@ -1,11 +1,12 @@
 {
-  "pages":[
+  "pages": [
     "pages/user/user",
     "pages/table/table",
     "pages/logs/logs",
     "pages/index/index",
     "pages/result/result",
-    "pages/lend_list/lend_list"
+    "pages/lend_list/lend_list",
+    "pages/index/book_info/book_info"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -38,5 +39,4 @@
       }
     ]
   }
-  
 }

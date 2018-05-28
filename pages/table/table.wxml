@@ -1,6 +1,6 @@
 <!--table.wxml-->
 <view class="title">外借填表</view>
- <view class="horizon_line"></view> 
+<view class="horizon_line"></view> 
   <view class="itemView">书名：
     <input class="input" name="bookName" placeholder="请输入书名" bindinput="bookNameInput"/>
   </view>
