@@ -32,6 +32,7 @@ input.input{
   flex-direction: column;  
   justify-content: center;  
   margin: 0 auto; 
+  color: darkgrey;
 }  
 
 button.change{

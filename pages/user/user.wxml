@@ -19,23 +19,21 @@
     </view>
     <view class='horizon_line_thin'></view>
     <view>联系方式：
-      <checkbox-group name="connect">
       <view style='margin-bottom:20rpx;height:100rpx'>
-        <checkbox  bindtap='checkbox_click1' checked='{{check1}}' style='margin-bottom:10rpx;' value='1'>电话:</checkbox>
-          <input wx:if="{{check1}}" type='number' class='input' name="phone"></input>
+        <view  style='margin-bottom:10rpx;'>电话:</view>
+          <input type='number' class='input' name="phone" placeholder='{{user_phone}}'></input>
       </view>
         <view class='horizon_line_thin'></view>
         <view style='margin-bottom:20rpx;height:100rpx'>
-          <checkbox bindtap='checkbox_click2' checked='{{check2}}' style='margin-bottom:10rpx;' value='2'>QQ:</checkbox>
-          <input wx:if="{{check2}}" type='number' class='input' name="qq"></input>
+          <view style='margin-bottom:10rpx;' >QQ:</view>
+          <input type='number' class='input' name="qq" placeholder='{{user_QQ}}'></input>
         </view>    
         <view class='horizon_line_thin'></view>
         <view style='margin-bottom:20rpx;height:100rpx'>
-          <checkbox  bindtap='checkbox_click3' checked='{{check3}}' style='margin-bottom:10rpx;' value='3'>微信: </checkbox>
-          <input wx:if="{{check3}}" class='input' name="weixin"></input>
+          <view  style='margin-bottom:10rpx;'>微信: </view>
+          <input class='input' name="weixin" placeholder='{{user_weixin}}'></input>
          </view>
           <view class='horizon_line_thin'></view>
-      </checkbox-group>
     </view>
     <button size='mini' class='change' disabled='{{change}}' form-type="submit">确认修改</button>
   </form>
