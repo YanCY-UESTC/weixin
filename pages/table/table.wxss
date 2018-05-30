@@ -1,9 +1,5 @@
-.title{
-  height:100rpx;
-}
-
 .itemView{
-  top:15px;
+  margin-top: 10px;
   display: block;
   word-break:break-all;
   white-space: pre-line;
@@ -12,33 +8,46 @@
 .input{  
   height: 40px;  
   width: 90%; 
-  top:15px; 
   border: solid 1px rgb(204, 204, 204); 
   border-radius:15px; 
   display: flex;  
   flex-direction: column;  
   justify-content: center;  
   margin: 0 auto; 
-}  
+  margin-top: 10px;
+} 
 
 .note{  
-  height: 200px;  
+  height: 130px;  
   width: 90%;  
-  top:15px;
   border: solid 1px rgb(204, 204, 204);  
   border-radius:15px;
   display: flex;  
   flex-direction: column; 
   margin: 0 auto; 
+  margin-top: 10px;
 }  
+
+.add{
+  height: 100px;
+  width: 100px;
+  margin-top:20px;
+  margin-left: 50rpx;
+  border: solid 1px rgb(204, 204, 204);  
+  border-radius:15px;
+}
+
+.image_add{
+  height:100px;
+  width: 100px;
+  opacity:0.3;
+}
 
 button.clr{
   width: 90%;
-  height: 100rpx;
   align-self: center;
   margin-top: 30rpx;
   margin-bottom: 80rpx;
-  
 }
 
 button.sub{
