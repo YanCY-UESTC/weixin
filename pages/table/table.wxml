@@ -1,20 +1,46 @@
 <!--table.wxml-->
 <form>
-<view class="horizon_line"></view> 
-  <view class="itemView">书名：
+  <view  class="top">
+    <image class='image_top' src='/images/form_picture.jpg' ></image>
+  </view>
+  
+
+  <view class="horizon_line"></view> 
+   <view class="horizon_line" ></view> 
+
+  <view class='form'>
+    <view class="notice">标*为必填项：</view>
+
+    <view class="itemView">*书名：</view>
     <input class="input" name="bookName" placeholder="请输入书名" bindinput="bookNameInput"/>
-  </view>
-  <view class="itemView">图书ISBN：
+    
+    <view class="itemView">*图书ISBN：</view>
     <input class="input" name="bookIBSN" placeholder="请输入图书ISBN" bindinput="bookIBSNInput" />
-  </view>
-  <view class="itemView">备注：
-    <textarea placeholder="placeholder颜色是红色的"  class="note" placeholder="请输入备注内容（如理想租金、借阅要求、交接地点等)" placeholder-style="text-align: center;"  bindinput="note"  />
-  </view>
+    
+    <view class="itemView">作者：</view>
+    <input class="input" name="writer" placeholder="请输入作者" bindinput="writerInput" />
 
-<view class="add">
-    <image class='image_add' src='/images/add.png'></image>
-</view>
+    <view class="itemView">出版社：</view>
+    <input class="input" name="publisher" placeholder="请输入出版社" bindinput="publisherInput" />
 
-  <button type='primary' formType='submit' class='sub' >提交</button>
-  <button type='warn' formType='reset' class='clr'>清除</button>
-  </form>
+    <view class="itemView">出版日期：</view>
+    <input class="input" name="publishDate" placeholder="请输入出版日期" bindinput="publishDateInput" />
+
+    <view class="itemView">图书价格：</view>
+    <input class="input" name="price" placeholder="请输入价格" bindinput="priceInput" />
+
+    <view class="itemView">页数：</view>
+    <input class="input" name="pages" placeholder="请输入页数" bindinput="pagesInput" />
+
+    <view class="itemView">备注：</view>
+    <textarea placeholder="placeholder颜色是红色的"  class="note" placeholder="请输入备注内容（如理想租金、借阅要求、交接地点，以及与图书内容相关的介绍等)" placeholder-style="text-align: center;"  bindinput="note"  />
+    
+    <view class="itemView">*添加图片（最多添加9张）：</view>
+    <view class="add">
+      <image class='image_add' src='/images/add.png' bindtap='uploadPhoto'></image>
+    </view>
+
+    <button type='primary' formType='submit' class='sub' >提交</button>
+    <button type='warn' formType='reset' class='clr'>清除</button>
+  </view>
+</form>
