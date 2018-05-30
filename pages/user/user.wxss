@@ -22,3 +22,18 @@
 .usermotto {
   margin-top: 700rpx;
 }
+
+input.input{  
+  height: 40rpx;  
+  width: 90%; 
+  top:15rpx; 
+  /*border: solid 1px rgb(204, 204, 204);*/
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  margin: 0 auto; 
+}  
+
+button.change{
+  size: mini;
+}

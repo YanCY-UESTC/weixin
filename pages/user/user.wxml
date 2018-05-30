@@ -11,14 +11,33 @@
     </block>
   </view>
   <view class='horizon_line'></view>
-  <form bindsubmit="formSubmit" bindreset="formReset">
-  <text >姓名</text>
-  <block wx:if='{{name_edit==0}}'>
-  <view>{{name}}</view>
-  </block>
-  <block wx:else>
-  <input name="name"></input>
-  </block>
+  <form bindsubmit="userSubmit">
+    <view>所在校区：
+      <picker range='{{schools}}' value='school_index' bindchange='schoolchange' name="school">
+      <view style='margin:10rpx;color:darkgrey;'>{{schools[school_index]}}</view>
+      </picker>
+    </view>
+    <view class='horizon_line_thin'></view>
+    <view>联系方式：
+      <checkbox-group name="connect">
+      <view style='margin-bottom:20rpx;height:100rpx'>
+        <checkbox  bindtap='checkbox_click1' checked='{{check1}}' style='margin-bottom:10rpx;' value='1'>电话:</checkbox>
+          <input wx:if="{{check1}}" type='number' class='input' name="phone"></input>
+      </view>
+        <view class='horizon_line_thin'></view>
+        <view style='margin-bottom:20rpx;height:100rpx'>
+          <checkbox bindtap='checkbox_click2' checked='{{check2}}' style='margin-bottom:10rpx;' value='2'>QQ:</checkbox>
+          <input wx:if="{{check2}}" type='number' class='input' name="qq"></input>
+        </view>    
+        <view class='horizon_line_thin'></view>
+        <view style='margin-bottom:20rpx;height:100rpx'>
+          <checkbox  bindtap='checkbox_click3' checked='{{check3}}' style='margin-bottom:10rpx;' value='3'>微信: </checkbox>
+          <input wx:if="{{check3}}" class='input' name="weixin"></input>
+         </view>
+          <view class='horizon_line_thin'></view>
+      </checkbox-group>
+    </view>
+    <button size='mini' class='change' disabled='{{change}}' form-type="submit">确认修改</button>
   </form>
     <navigator url='../lend_list/lend_list'>外借列表</navigator>
-  </view>
+</view>

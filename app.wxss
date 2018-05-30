@@ -13,3 +13,10 @@ view.horizon_line{
   height: 8px;
   width: 100%;
 }
+view.horizon_line_thin{
+  background-color: #2E86C1;
+  height: 1px;
+  width: 95%;
+  margin-bottom: 10rpx; 
+  align-self: left;
+}

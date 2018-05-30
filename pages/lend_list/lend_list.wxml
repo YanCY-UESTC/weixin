@@ -1,7 +1,6 @@
 <!--pages/lend_list/lend_list.wxml-->
 <view class="title">
   <view width="70%">外借列表</view>
-  <image src='/images/add.png' style='width:5%;height:130rpx'></image>
 </view>
 <view class="horizon_line"></view>
 <view wx:if="{{LendNumber==0}}">无外借记录</view>
