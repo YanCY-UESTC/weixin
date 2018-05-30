@@ -31,3 +31,18 @@
   flex-direction: column; 
   margin: 0 auto; 
 }  
+
+button.clr{
+  width: 90%;
+  height: 100rpx;
+  align-self: center;
+  margin-top: 30rpx;
+  margin-bottom: 80rpx;
+  
+}
+
+button.sub{
+  width: 90%;
+  align-self: center;
+  margin-top: 60rpx;
+}

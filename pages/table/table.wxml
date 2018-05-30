@@ -1,5 +1,6 @@
 <!--table.wxml-->
 <view class="title">外借填表</view>
+<form>
 <view class="horizon_line"></view> 
   <view class="itemView">书名：
     <input class="input" name="bookName" placeholder="请输入书名" bindinput="bookNameInput"/>
@@ -10,3 +11,6 @@
   <view class="itemView">备注：
     <textarea placeholder="placeholder颜色是红色的"  class="note" placeholder="请输入备注内容（如理想租金、借阅要求、交接地点等)" placeholder-style="text-align: center;"  bindinput="note"  />
   </view>
+   <button type='primary' formType='submit' class='sub' >提交</button>
+    <button type='warn' formType='reset' class='clr'>清除</button>
+  </form>

@@ -11,8 +11,14 @@
     </block>
   </view>
   <view class='horizon_line'></view>
-  <view class="usermotto" >
-    <text class="user-motto" >{{motto}}</text>
-    <navigator url='../lend_list/lend_list'>hehhe</navigator>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <text >姓名</text>
+  <block wx:if='{{name_edit==0}}'>
+  <view>{{name}}</view>
+  </block>
+  <block wx:else>
+  <input name="name"></input>
+  </block>
+  </form>
+    <navigator url='../lend_list/lend_list'>外借列表</navigator>
   </view>
-</view>
