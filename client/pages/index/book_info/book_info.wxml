@@ -1,9 +1,10 @@
 <view>
   <image class='image_size' src='{{book_image}}'></image>
-  <view>{{book_name}}</view>
+  <view>{{book_name}}</view> 
   <view>作者：{{book_auth}}</view>
   <view>剩余：{{book_num}}</view>
   <view>备注：{{book_note}}</view>
+  <view>联系方式({{contect_type}}):{{contect_value}}</view>
   <view class='container'>
     <button bindtap='save' style='background: yellow;' class='button_size'>
       <view class='size'>收      藏</view>

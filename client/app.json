@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/user/user",
+    "pages/addCgi/addCgi",
     "pages/table/table",
     "pages/logs/logs",
     "pages/index/index",
