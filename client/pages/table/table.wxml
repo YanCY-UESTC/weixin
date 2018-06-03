@@ -35,7 +35,7 @@
     <view class="itemView">备注：</view>
     <textarea placeholder="placeholder颜色是红色的"  class="note" placeholder="请输入备注内容（如理想租金、借阅要求、交接地点，以及与图书内容相关的介绍等)" placeholder-style="text-align: center;"  bindinput="note"  />
     
-    <view class="itemView">*添加图片（最多添加9张）：</view>
+    <view class="itemView">*添加图片：</view>
     <view class="add">
       <image class='image_add' src='/images/add.png' bindtap='uploadPhoto'></image>
     </view>

@@ -37,5 +37,5 @@
     </view>
     <button size='mini' class='change' disabled='{{change}}' form-type="submit">确认修改</button>
   </form>
-    <navigator url='../lend_list/lend_list'>外借列表</navigator>
+    <navigator url='../test/index'>外借列表</navigator>
 </view>

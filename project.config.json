@@ -4,11 +4,14 @@
 	"miniprogramRoot": "./client",
 	"qcloudRoot": "./server",
 	"setting": {
-		"newFeature": true,
-		"urlCheck": false
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
 	},
 	"appid": "touristappid",
 	"projectname": "test",
-	"condition": {},
-	"isGameTourist": true
+	"isGameTourist": true,
+	"condition": {}
 }
