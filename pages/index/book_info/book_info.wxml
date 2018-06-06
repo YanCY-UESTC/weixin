@@ -1,10 +1,9 @@
 <view>
   <image class='image_size' src='{{book_image}}'></image>
-  <view>{{book_name}}</view> 
+  <view>{{book_name}}</view>
   <view>作者：{{book_auth}}</view>
   <view>剩余：{{book_num}}</view>
   <view>备注：{{book_note}}</view>
-  <view>联系方式({{contect_type}}):{{contect_value}}</view>
   <view class='container'>
   <view class='form'>
     <button type='primary' formType='submit' bindtap='rent' class='sub'>租借</button>
