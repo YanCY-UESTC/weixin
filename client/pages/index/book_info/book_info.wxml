@@ -6,12 +6,9 @@
   <view>备注：{{book_note}}</view>
   <view>联系方式({{contect_type}}):{{contect_value}}</view>
   <view class='container'>
-    <button bindtap='save' style='background: yellow;' class='button_size'>
-      <view class='size'>收      藏</view>
-    </button>
-    <view class='horizon_Line'></view>
-    <button bindtap='rent' style='background: yellow;' class='button_size'>
-      <view class='size'>租      借</view>
-    </button>
+  <view class='form'>
+    <button type='primary' formType='submit' bindtap='rent' class='sub'>租借</button>
+    <button type='warn' formType='submit' bindtap='collect' class='clr'>收藏</button>
+  </view>
   </view>
 </view>

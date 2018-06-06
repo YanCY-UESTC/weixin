@@ -12,7 +12,7 @@
     <view class='border'>可外借书籍</view>
   </view>
 </view>
-<view class='list'>
+<!-- <view class='list'>
   <button bindtap='book_info'>
     <view>
       <image class='image' src='{{book_image}}'></image>
@@ -22,4 +22,13 @@
       <view>作者：{{book_auth}}</view>
     </view>
   </button>
+</view> -->
+
+<view class='list'>
+  <image class='image' bindtap=''  src='{{book_image}}'></image>
+  <view class='list_detail' style='font-size: small;'>
+    <view>书名：{{book_name}}</view>
+    <view>作者：{{book_auth}}</view>
+    <view>备注：{{book_note}}</view>
+  </view>
 </view>

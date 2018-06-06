@@ -53,10 +53,15 @@
 
 .list{
   display: flex;
-  flex-direction: row;
-  align-items: left;
+  align-items: row;
   position: absolute;
-  left: 10rpx;
+  left: 30rpx;
+  box-sizing: border-box;
+}
+
+.list_detail{
+  align-items: center;
+  
 }
 
 .info_text{
@@ -66,6 +71,6 @@
 }
 
 .image{
-  width: 300rpx;
-  height: 400rpx;
+  width: 250rpx;
+  height: 150rpx;
 }

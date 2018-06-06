@@ -19,3 +19,17 @@
   width: 100%;
 }
 
+button.clr{
+  width: 90%;
+  align-self: center;
+  font-size: 16px;
+  margin-top: 30rpx;
+  margin-bottom: 80rpx;
+}
+
+button.sub{
+  width: 90%;
+  font-size: 16px;
+  align-self: center;
+  margin-top: 60rpx;
+}

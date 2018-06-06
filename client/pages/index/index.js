@@ -5,15 +5,16 @@ Page({
     book_num: '2',
     book_image: '/images/01.jpg',
     book_note: '',
+    search_name: ''
   },
   searchValueInput: function (e) {
     var value = e.detail.value;
     this.setData({
-      book_name: value,
+      search_name: value,
     });
   },  
   search: function(e){
-    var Search = this.data.book_name
+    var Search = this.data.search_name
     wx.setStorageSync('Search', Search),
     wx.navigateTo({ 
       url: '../result/result',
