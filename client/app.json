@@ -1,11 +1,8 @@
 {
   "pages": [
     "pages/user/user",
-<<<<<<< HEAD:client/app.json
     "pages/addCgi/addCgi",
     "pages/test/index",
-=======
->>>>>>> parent of d2020b2... 添加服务器:app.json
     "pages/table/table",
     "pages/logs/logs",
     "pages/index/index",
