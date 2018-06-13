@@ -1,11 +1,25 @@
 Page({
-  data:{  
-    book_name:'微积分',
-    book_auth: '未知',
-    book_num: '2',
-    book_image: '/images/01.jpg',
-    book_note: '',
-    search_name: ''
+  data: {
+    book_List :[
+      {  
+      book_name:'微积分',
+      book_auth: '未知',
+      book_num: '2',
+      book_image: '/images/01.jpg',
+      book_note: '',
+      search_name: ''
+    },
+    {
+      book_name: '线性代数',
+      book_auth: '未知',
+      book_num: '2',
+      book_image: '/images/01.jpg',
+      book_note: '',
+      search_name: ''
+    }]
+  },
+  onLoad:function(){
+
   },
   searchValueInput: function (e) {
     var value = e.detail.value;
@@ -25,11 +39,11 @@ Page({
   },
   book_info:function(e){
     var info = {
-      name: this.data.book_name,
-      author: this.data.book_auth,
-      num: this.data.book_num,
-      image: this.data.book_image,
-      note: this.data.book_note
+      name: e.detail.book_name,
+      author: e.detail.book_auth,
+      num: e.detail.book_num,
+      image: e.detail.book_image,
+      note: e.detail.book_note
     }
     wx.setStorageSync('info', info),
     wx.navigateTo({

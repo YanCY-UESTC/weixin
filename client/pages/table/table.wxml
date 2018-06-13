@@ -1,5 +1,5 @@
 <!--table.wxml-->
-<form>
+<form bindsubmit='submit' bindreset='reset'>
   <view  class="top">
     <image class='image_top' src='/images/form_picture.jpg' ></image>
   </view>

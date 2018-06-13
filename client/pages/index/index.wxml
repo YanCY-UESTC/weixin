@@ -12,23 +12,16 @@
     <view class='border'>可外借书籍</view>
   </view>
 </view>
-<!-- <view class='list'>
-  <button bindtap='book_info'>
-    <view>
-      <image class='image' src='{{book_image}}'></image>
-    </view>
-    <view class='info_text'>
-      <view>{{book_name}}</view>
-      <view>作者：{{book_auth}}</view>
-    </view>
-  </button>
-</view> -->
 
-<view class='list'>
-  <image class='image' bindtap=''  src='{{book_image}}'></image>
-  <view class='list_detail' style='font-size: small;'>
-    <view>书名：{{book_name}}</view>
-    <view>作者：{{book_auth}}</view>
-    <view>备注：{{book_note}}</view>
+<view wx:for="{{book_List}}" for-items="{{book_List}}" wx:key="{{book_List}}">
+  <view class='list' bindtap='book_info' style='background-color: whitesmoke'>
+    <image class='image' src='{{item.book_image}}'></image>
+    <view class='list_detail' style='font-size: small;'>
+      <view>书名：{{item.book_name}}</view>
+      <view>作者：{{item.book_auth}}</view>
+      <view>剩余：{{item.book_num}}</view>
+    </view>
+    <view class='list-detail' style='width: 250rpx;'> </view>
   </view>
+  <view style='height: 20rpx;'></view>
 </view>

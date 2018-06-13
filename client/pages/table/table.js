@@ -1,8 +1,51 @@
 Page({
   data: {
    add_image: '/images/add.png',
+   book_name: '',
+   book_ISBN: '',
+   author: '',
+   image: '',
+   publish: '',
+   publish_date: '',
+   price: '',
+   page_num: ''
   }, 
   onLoad: function (options) {
+  },
+  bookNameInput: function(e){
+    this.setData({
+      book_name: e.detail.value
+    });
+  },
+  bookIBSNInput:function(e){
+    this.setData({
+      book_ISBN: e.detail.value
+    });
+  },
+  writerInput: function(e){
+    this.setData({
+      author: e.detail.value
+    });
+  },
+  publisherInput: function(e){
+    this.setData({
+      publish: e.detail.value
+    });
+  },
+  publishDateInput: function(e){
+    this.setData({
+      publish_date: e.detail.value
+    });
+  },
+  priceInput: function(e){
+    this.setData({
+      price: e.detail.value
+    });
+  },
+  pagesInput: function(e){
+    this.setData({
+      page_num: e.detail.value
+    });
   },
   uploadPhoto(e) {
     var that = this;
@@ -14,6 +57,22 @@ Page({
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
         var tempFilePaths = res.tempFilePaths;
         upload(that, tempFilePaths);
+      }
+    })
+  },
+  submit: function(e){
+    var that = this;
+    wx.request({
+      method: 'POST',
+      url: 'http:www.forerversix.cn:5555',
+      data: {
+        'data': book_name,book_ISBN,author,image,publish,publish_date,page_num
+      },
+      header: { 'content-type': 'application/json' },
+      success: function (res) {
+        wx.showToast({
+          title: '提交成功',
+        })
       }
     })
   }
@@ -58,6 +117,7 @@ function upload(page, path) {
       },
       complete: function () {
         wx.hideToast();  //隐藏Toast
-      }
+      },
+      
     })
 }

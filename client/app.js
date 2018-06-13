@@ -3,18 +3,7 @@ var qcloud = require('./vendor/weixin/index')
 var config = require('./config')
 
 App({
-  data:{
-    book_name: '',
-    book_ISBN: '',
-    author: '',
-    publish: '',
-    publish_date: '',
-    price: '',
-    page_num: ''
-  },
   onLaunch: function (options) {
-    //获取后台数据
-    this.get_data()
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -52,14 +41,4 @@ App({
   globalData: {
     userInfo: null
   },
-  //获取数据
-  get_data:function(){},
-  //添加数据至数据库
-  insert:function(e){},
-  //从数据库查询数据信息
-  database_search:function(e){},
-  //数据库信息删除
-  database_delete:function(e){},
-  //数据库信息修改
-  database_change:function(e){}
 })
