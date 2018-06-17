@@ -1,4 +1,17 @@
 <view>
-   <view wx:if="{{searchValue.length==0}}">未找到相关信息</view> 
-  <view wx:else >{{searchValue}}</view>
+  <view wx:if="{{searchValue.length==0}}">未找到相关信息</view> 
+  <view wx:else >
+    <view wx:for="{{book_List}}" for-items="{{book_List}}" wx:key="{{book_List}}">
+      <view class='list' bindtap='book_info' style='background-color: whitesmoke'>
+        <image class='image' src='{{item.book_image}}'></image>
+        <view class='list_detail' style='font-size: small;'>
+          <view>书名：{{item.book_name}}</view>
+          <view>作者：{{item.book_auth}}</view>
+          <view>剩余：{{item.book_num}}</view>
+        </view>
+        <view class='list-detail' style='width: 250rpx;'> </view>
+      </view>
+      <view style='height: 20rpx;'></view>
+    </view>
+  </view>
 </view>

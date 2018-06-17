@@ -66,7 +66,14 @@ Page({
       method: 'POST',
       url: 'http:www.forerversix.cn:5555',
       data: {
-        'data': book_name,book_ISBN,author,image,publish,publish_date,page_num
+        'name': this.data.book_name,
+        'ISBN': this.data.book_ISBN,
+        'auther': this.data.author,
+        'image': this.data.image,
+        'publish': this.data.publish,
+        'date': this.data.publish_date,
+        'num': this.data.page_num,
+        key: 'data'
       },
       header: { 'content-type': 'application/json' },
       success: function (res) {
